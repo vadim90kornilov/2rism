@@ -2,7 +2,98 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
 .container {
   max-width: 1440px;
+  margin: 0 auto;
   padding: 0 32px;
+}
+
+/*HEADER*/
+.header {
+  padding-top: 31px;
+  height: 800px;
+
+  background-color: #000;
+  background-image: url("../img/header-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+
+  border-radius: 0 0 54px 54px;
+
+  color: #fff;
+}
+
+header a {
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 54px;
+}
+
+.nav-list__link {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.nav-list__link--active {
+  opacity: 1;
+}
+
+.user {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+}
+
+.user__content {
+  color: #fff;
+  text-align: right;
+
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.user__name {
+  color: #fff;
+  font-weight: 600;
+  opacity: 1;
+}
+.user__greeting {
+  opacity: 0.5;
+}
+.user__avatar {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.user__avatar-img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user__avatar::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ff0000;
 }
