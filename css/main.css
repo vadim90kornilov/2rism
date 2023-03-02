@@ -17,6 +17,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  align-items: center;
 }
 
 /*HEADER*/
@@ -44,6 +45,7 @@ header a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .nav-list {
@@ -142,7 +144,69 @@ header a {
   background: #4f2dfb;
 }
 .form {
+  display: flex;
+  width: 1140px;
+  height: 88px;
+  padding: 8px 8px;
+
   background: #fff;
   color: #000;
-  text-align: center;
+  border-radius: 12px;
 }
+.button-search {
+  width: 60px;
+  height: 60px;
+  padding: 18px;
+  align-self: center;
+
+  background: #7b61ff;
+  border-radius: 12px;
+}
+
+.form-input {
+  flex-grow: 1;
+  padding: 16px 20px 16px 56px;
+  line-height: 1;
+
+  /* background: #7b61ff4d; */
+
+  position: relative;
+}
+.form-input::before {
+  display: block;
+
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 16px;
+  top: 24px;
+}
+.form-input--location::before {
+  background-image: url("./../img/icons/map.svg");
+}
+.form-input--activity::before {
+  background-image: url("./../img/icons/activity.svg");
+}
+.form-input--when::before {
+  background-image: url("./../img/icons/calendar.svg");
+}
+.form-input--guests::before {
+  background-image: url("./../img/icons/guests.svg");
+}
+.label {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: #5b5b5b;
+}
+.select {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #161414;
+}
+/* .custom-select-container {
+  width: 224px;
+} */

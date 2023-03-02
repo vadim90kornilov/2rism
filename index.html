@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2rism - travel site</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./libs/custom-select/custom-select.css">
   </head>
   <body>
     <header class="header">
@@ -62,29 +63,61 @@
         
         </div>
         <form action="" class="header__form form">
-          <label for="destinations" class="label">Location</label>
-          <select name="" id="destinations">
-            <option value="all">Explore nearby destinations</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-            <option value="4">Option 4</option>
-          </select>
+          <div class="form-input form-input--location">
+
+            <label for="location" class="label">Location</label><br>
+            <select class="select" name="" id="location">
+              <option value="all">Explore nearby destinations</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
+            </select>
+          </div>
           
+          <div class="form-input form-input--activity">
+
+            <label for="activity" class="label">Activities</label><br>
+            <select class="select" name="" id="activity">
+              <option value="all">All Activities</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
+            </select>
+          </div>
+
+          <div class="form-input form-input--when">
+            <label for="when" class="label">When</label><br>
+              <select class="select" name="" id="when">
+                <option value="all">Choose a Date</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+              </select>
+          </div>
           
+          <div class="form-input form-input--guests">
+            <label for="guests" class="label">Guests</label><br>
+            <select class="select" name="" id="guests">
+              <option value="1">1 guest</option>
+              <option value="2">2 guest</option>
+              <option value="3">3 guest</option>
+              <option value="4">4 guest</option>
+            </select>
+          </div>
 
-          Activity
-          All Activities
 
-          When
-          Choose a Date
-
-          Guests
-          1 guest
+          <button class="button-search">
+            <img src="./img/icons/search.svg" alt="search">
+          </button>
 
 
         </form>
       </div>
     </header>
+    <script src="./libs/custom-select/custom-select.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
